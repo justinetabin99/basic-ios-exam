@@ -11,6 +11,7 @@ The app must perform the following tasks:
 * Use this [GET /users](https://api.github.com/users) endpoint.
 * The API can be accessed without auth however, it requires error handling of [rate limit](https://developer.github.com/v3/#rate-limiting). Display the error message informing "Rate limit exceeded".
 * The app can be used in both portrait and landscape.
+* Maintains stateless UI on scrolling or orientation change behaviour (e.g no re-downloading of images or non-smooth behaviour).
 
 # Minimum Screen Specification
 ![](resources/example-screenshot.png)
@@ -20,20 +21,20 @@ You may consider incorporating extra features or improved design. (e.g pull to r
 
 # Guidance for Code Quality 
 ### Modern Architecture
-* Demonstrate best architectural design patterns. (e.g MVC, MVVM, modular, testable, etc)
+* Demonstrate your preferred architectural design patterns. (e.g MVC, MVVM, modular, testable, etc)
 
 ### Knowledge of Cocoa Touch
 * Demonstrate high knowledge of UIKit. (e.g Storyboards, AutoLayout, ConstraintLayout, programmatically UIs, etc)
 
 ### Coding Standard
-* Write high quality Swift code using standard best practice coding conventions. This includes naming methods and classes, using structs and classes as needed. (e.g. Raywenderlich Swift Style, Git)
+* Write high quality Swift code using standard best practice coding conventions. This includes naming methods and classes, using structs and classes as needed. (e.g. Raywenderlich Swift Style, Gitflow)
 
 # Evaluation Criteria
-Implementation of [Minimum Specification](#Minimum-Specification), clearly communicating design decisions and best engineering practices.
+Implementation of [Minimum Specification](#Minimum-Specification), clearly communicating decisions and best engineering practices.
 
 # Requirements
 * Latest Xcode
-* Latest Swift
+* Latest Swift / Storyboard UI
 * Cocoapods or iOS / Cocoa Touch frameworks
 
 # Submission
