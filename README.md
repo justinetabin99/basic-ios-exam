@@ -6,12 +6,13 @@ Write a single-page app that displays a list of GitHub users.
 
 The app must perform the following tasks:
 
-* Display a list of users retrieved from publicly available GitHub user account as initial screen.
-* Download, cache and display avatar image urls retrieved from API.
-* Use this [GET /users](https://api.github.com/users) endpoint.
-* The API can be accessed without auth however, it requires error handling of [rate limit](https://developer.github.com/v3/#rate-limiting). Display the error message informing "Rate limit exceeded".
-* The app can be used in both portrait and landscape.
-* Maintains stateless UI on scrolling or orientation change behaviour (e.g no re-downloading of images or non-smooth behaviour).
+1. Display a list of users
+> This can be retrieved from publicly available GitHub user account as initial screen.
+2. Display and cache avatar image urls.
+3. Use this [GET /users](https://api.github.com/users) endpoint.
+4. Display the error message informing "Rate limit exceeded". 
+> The API can be accessed without auth however, it requires error handling of [rate limit](https://developer.github.com/v3/#rate-limiting). 
+5. Support for both portrait and landscape.
 
 # Minimum Screen Specification
 ![](resources/example-screenshot.png)
@@ -30,7 +31,9 @@ You may consider incorporating extra features or improved design. (e.g pull to r
 * Write high quality Swift code using standard best practice coding conventions. This includes naming methods and classes, using structs and classes as needed. (e.g. Raywenderlich Swift Style, Gitflow)
 
 # Evaluation Criteria
-Implementation of [Minimum Specification](#Minimum-Specification), clearly communicating decisions and best engineering practices.
+Implementation of [Minimum Specification](#Minimum-Specification), clearly communicating decisions and best engineering practices (e.g complexity, refactorability and scalability). 
+
+Examinee will also be hearing back the assessment of code's strengths, weaknesses.
 
 # Requirements
 * Latest Xcode
