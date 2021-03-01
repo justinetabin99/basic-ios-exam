@@ -11,7 +11,30 @@ The app must perform the following tasks:
 2. Display and cache avatar image urls.
 3. Use this [GET /users](https://api.github.com/users) endpoint.
 4. Display the error message informing "Rate limit exceeded". 
-> The API can be accessed without auth however, it requires error handling of [rate limit](https://developer.github.com/v3/#rate-limiting). 
+> The API can be accessed without auth however, it requires error handling of rate limit.
+```
+$ curl -I https://api.github.com/users
+> HTTP/1.1 200 OK
+> Date: Mon, 01 Jul 2013 17:27:06 GMT
+> Status: 200 OK
+> X-RateLimit-Limit: 60
+> X-RateLimit-Remaining: 56
+> X-RateLimit-Reset: 1372700873
+```
+> If you exceed the rate limit, an error response returns:
+```
+> HTTP/1.1 403 Forbidden
+> Date: Tue, 20 Aug 2013 14:50:41 GMT
+> Status: 403 Forbidden
+> X-RateLimit-Limit: 60
+> X-RateLimit-Remaining: 0
+> X-RateLimit-Reset: 1377013266
+
+> {
+>    "message": "API rate limit exceeded for xxx.xxx.xxx.xxx. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+>    "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+> }
+```
 5. Support for both portrait and landscape.
 
 # Minimum Screen Specification
